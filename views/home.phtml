@@ -1,12 +1,19 @@
-<!-- 
-<h2 class="home-title">enregistrez vous</h2>
-<div class="separateur-title"></div>	
-<div class="row">
-	*/<?php ?>*/
-</div> -->
-
+<div id="container"><tr>
+	<!-- <h1>Mon super chat</h1>
+	<form method="POST" action="index.php?page=home">
+	<label><input class="form-control" type="text" name="loginTarget" value="<?=htmlentities($loginTarget)?>" placeholder="login du membre"></label>
+	<h2 class="title-New-mp">Contenu du message :</h2>
+	<textarea class="form-control" rows="3"
+	type="text" name="content" value="<?=htmlentities($content)?>">
+	</textarea>
+	<br/>
+	<input class="btn btn-primary" type="submit" value="Valider">
+	</form> -->
+	<?php require('apps/chat.php') ?>
+		
 <div class="row last-member">	
 	<h2 class="home-title">Derniers membres inscrits</h2>
 	<div class="separateur-title"></div>	
 	<?php require('apps/home_last_member.php'); ?>
+
 </div>
