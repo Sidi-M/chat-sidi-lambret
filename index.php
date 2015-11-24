@@ -8,7 +8,7 @@
 
 	$ways = array('home', 'login', 'mp', 'addMp', 'profil', 'register', 'postRegister' , 'userlist', 'archives', 'edit_profil');
 
-	$traitements = array( 'login', 'logout', 'addMp', 'register', 'edit_profil', 'profil');
+	$traitements = array( 'login', 'logout', 'chat', 'register', 'edit_profil', 'profil');
 
 	$traitementsAdmin = array('statut');
 
