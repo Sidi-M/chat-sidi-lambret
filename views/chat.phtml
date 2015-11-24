@@ -1,0 +1,21 @@
+        <div id="messages">
+            <!-- les messages du tchat -->
+
+            <?php
+                // on récupère les 10 derniers messages postés
+                $requete = $database->query('SELECT * FROM message ORDER BY id DESC LIMIT 0,10');
+
+                while($donnees = mysqli_fetch_assoc($requete)){
+                    // on affiche le message (l'id servira plus tard)
+                    echo "<p id=\"" . $donnees['id'] . "\">" . $donnees['pseudo'] . " dit : " . $donnees['message'] . "</p>";
+                }
+ 
+            ?>
+
+        </div>
+
+    <form method="POST" action="traitement.php">
+        Pseudo : <input type="text" name="pseudo" id="pseudo" /><br />
+        Message : <textarea name="message" id="message"></textarea><br />
+        <input type="submit" name="submit" value="Envoyez votre message !" id="envoi" />
+    </form>
