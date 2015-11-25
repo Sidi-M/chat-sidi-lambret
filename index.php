@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	$database = mysqli_connect('192.168.1.9', 'mp_chat', 'mp_chat', 'mp_chat');
+	$database = mysqli_connect('192.168.1.8', 'mp_chat', 'mp_chat', 'mp_chat');
 	if ( $database == false ) {
 		die(mysqli_connect_error());
 	}
